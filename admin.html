@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pets Travel | Admin</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="admin.css"></head>
+<body class="admin-body"><header class="admin-top"><a class="brand" href="index.html"><span class="brand-mark">🐾</span><span>Pets <b>Travel</b><small>ADMIN DASHBOARD</small></span></a><a href="index.html" class="text-link">← View website</a></header>
+<main class="admin-wrap">
+<section id="loginPanel" class="login-card"><span class="eyebrow">PRIVATE AREA</span><h1>Welcome back.</h1><p>Sign in to manage your Pets Travel demo website.</p><form id="loginForm"><label>Admin password<input id="adminPassword" type="password" required placeholder="Enter admin password"></label><button class="button button-primary">Sign in →</button></form><p class="tiny">Demo password: <code>ChangeMe123!</code></p><p class="warning">Demo only: this browser-only password is not secure enough for a public live website.</p></section>
+<section id="dashboard" hidden>
+ <div class="dash-heading"><div><span class="eyebrow">PETS TRAVEL CONTROL CENTRE</span><h1>Dashboard</h1><p>Manage booking requests and your website details.</p></div><button id="logout" class="button button-outline">Sign out</button></div>
+ <div class="stats"><article><span>Booking requests</span><b id="totalBookings">0</b></article><article><span>New requests</span><b id="newBookings">0</b></article><article><span>Confirmed</span><b id="confirmedBookings">0</b></article></div>
+ <div class="admin-grid">
+  <section class="panel"><div class="panel-title"><h2>Booking requests</h2><button id="exportCsv" class="button button-small button-outline">Export CSV</button></div><div id="bookingList" class="booking-list"><p>No booking requests yet.</p></div></section>
+  <section class="panel"><h2>Website details</h2><p class="panel-desc">These details appear on your public website.</p><form id="settingsForm"><label>Business name<input name="businessName" required></label><label>Business email<input name="email" type="email" placeholder="hello@example.co.uk"></label><label>Business phone<input name="phone" placeholder="Your contact number"></label><label>Tagline<input name="tagline"></label><button class="button button-primary">Save website details</button><p id="settingsMessage" class="tiny" aria-live="polite"></p></form></section>
+ </div>
+ <section class="panel content-panel"><h2>Quick website links</h2><div class="quick-links"><a href="index.html#booking">View booking form ↗</a><a href="index.html#services">View services ↗</a><a href="index.html#contact">View contact section ↗</a></div></section>
+</section></main><script src="admin.js"></script></body></html>
